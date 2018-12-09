@@ -1,0 +1,24 @@
+#!/bin/bash
+#This script will ask the student to input their score and evaluate the student's grade.
+
+echo "Welcome to linoop grader, please enter your test score:"
+
+#We should handle any input error here
+read score
+
+if [ score -ge 90 ]
+then
+    echo "You have earned an A"
+    exit 0
+elif [ score -ge 80 ]
+    echo "You have earned a B"
+    exit 0
+elif [ score -ge 70 ]
+    echo "You have earned a C"
+    exit 0
+elif [ score -ge 60 ]
+    echo "You have earned a D"
+    exit 0
+else 
+    echo "You got a F"
+    exit 0
